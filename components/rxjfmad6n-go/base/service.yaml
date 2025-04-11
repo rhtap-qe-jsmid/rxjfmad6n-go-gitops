@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: rxjfmad6n-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rxjfmad6n-go 
+  name: rxjfmad6n-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: rxjfmad6n-go 
